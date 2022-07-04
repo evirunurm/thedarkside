@@ -1,10 +1,11 @@
 <template>
 	<main>
-		<ArtCarousel />
+		<ArtCarousel :illustrations="illustrations"/>
 		<p class="presentation">
-			Somos un <span class="bold">grupo de artistas</span> residentes en Pamplona, y nuestro propósito es <span class="bold">renovar la escena artística</span> de esta cuidad.
+			Somos un <span class="bold">grupo de artistas</span> residentes en Pamplona, y nuestro propósito es <span
+			class="bold">renovar la escena artística</span> de esta cuidad.
 		</p>
-		<button @click="randomArtist()">¡Conócenos!</button>
+		<button class="button" @click="randomArtist()">¡Conócenos!</button>
 	</main>
 </template>
 
@@ -24,6 +25,23 @@ export default {
 				"/artistas/karen-yaniz",
 				"/artistas/alexander-rozinov",
 				"/artistas/andrea-gozalves",
+			],
+			illustrations: [
+				{
+					artist: "Mikel Sarrias",
+					src: "ms_bicho.png",
+					alt: "Bicho muy guay",
+				},
+				{
+					artist: "Evelin Virunurm",
+					src: "ev_rana.png",
+					alt: "La rana del mundo",
+				},
+				{
+					artist: "Mikel Sarrias",
+					src: "ms_bicho.png",
+					alt: "Bicho muy guay",
+				},
 			]
 		}
 	},
@@ -38,7 +56,7 @@ export default {
 <style scoped>
 
 main {
-	margin: 0 2.5rem;
+	margin: 0 var(--margin);
 }
 
 .presentation {

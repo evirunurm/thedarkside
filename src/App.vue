@@ -1,7 +1,7 @@
 <template>
 	<Header/>
 	<RouterView/>
-	<Footer />
+	<Footer/>
 </template>
 
 <script>
@@ -17,13 +17,22 @@ export default {
 </script>
 
 <style>
-*, *::before, *::after {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+:root {
+	--margin: 1.5rem;
+	--accent: goldenrod;
 }
 
-button {
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth !important; /* So hrefs to ids scroll smoothly. */
+}
+
+.button {
 	padding: 0.75rem 2rem;
 	background: none;
 	border: 1px solid black;
@@ -33,7 +42,7 @@ button {
 	display: block;
 }
 
-button:hover {
+.button:hover {
 	background: black;
 	border: 1px solid black;
 	color: white
@@ -42,5 +51,17 @@ button:hover {
 .bold {
 	font-weight: bold;
 }
+
+h1 {
+	font-size: 1.75rem;
+}
+
+h1, h2 {
+	width: 100%;
+	border-bottom: 1px solid black;
+	padding-bottom: 0.75rem;
+	margin-bottom: 0.75rem;
+}
+
 
 </style>
