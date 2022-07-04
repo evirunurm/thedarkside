@@ -1,17 +1,22 @@
 <template>
 	<section class="carousel">
-		<button class="button button-before" @click="rotate(false)">Before</button>
+		<button class="button button-before" @click="rotate(false)">
+			<svg width="19" height="35" viewBox="0 0 19 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M17 2L2 17.5L17 33" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg>
+		</button>
 		<div class="imgs-container">
 			<div class="imgs-box" ref="imgsBox">
-				<figure class="img-box" v-for="illustration in illustrations">
-					<img :src="'public/illustrations/' + illustration.src" :alt="illustration.alt" class="illustration">
-					<figcaption class="illustration-caption">
-						{{ illustration.alt + ', por ' + illustration.artist + '.' }}
-					</figcaption>
-				</figure>
+				<div class="img-box" v-for="illustration in illustrations">
+					<img :src="'public/illustrations/' + illustration.src" :alt="illustration.alt" class="illustration" :title="illustration.alt + ', por ' + illustration.artist + '.'">
+				</div>
 			</div>
 		</div>
-		<button class="button button-after" @click="rotate(true)">After</button>
+		<button class="button button-after" @click="rotate(true)">
+			<svg width="19" height="35" viewBox="0 0 19 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M2 2L17 17.5L2 33" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg>
+		</button>
 	</section>
 </template>
 
@@ -71,23 +76,23 @@ export default {
 
 .illustration {
 	width: 100%;
-}
-
-.illustration-caption {
-	text-align: right;
+	height: 100%;
+	object-fit: contain;
 }
 
 .img-box {
 	margin: 0;
 	min-width: 100%;
+	padding: 2rem;
 }
+
 
 .imgs-box {
 	display: flex;
 	position: relative;
 	left: 0;
-	transition: 0.5s ease-out;
-	background: red;
+	transition: 0.5s ;
+	height: 100%;
 }
 
 .imgs-container {
@@ -97,12 +102,27 @@ export default {
 
 /* buttons */
 .button {
+	background: none;
+	padding: 1rem;
 	position: absolute;
 	z-index: 10;
 	transform: translateY(-50%);
 	top: 50%;
-	height: 3rem;
-	width: 2rem;
+	border: none;
+	cursor: pointer;
+}
+
+.button path{
+	opacity: 0.5;
+	transition: 0.25s ease-in-out;
+}
+
+.button:hover path{
+	opacity: 1;
+}
+
+.button.button-after {
+	right: 0;
 }
 
 </style>

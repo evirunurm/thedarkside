@@ -1,6 +1,6 @@
 Todo list:
 
-- Art Carousel
+- ~~Art Carousel~~
 - Footer
 - Header
 - Menu

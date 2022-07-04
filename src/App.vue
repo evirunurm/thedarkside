@@ -23,8 +23,24 @@ export default {
 	box-sizing: border-box;
 }
 
-body {
-	margin: 0;
+button {
+	padding: 0.75rem 2rem;
+	background: none;
+	border: 1px solid black;
+	transition: 0.2s ease-in-out;
+	margin: 0 auto;
+	cursor: pointer;
+	display: block;
+}
+
+button:hover {
+	background: black;
+	border: 1px solid black;
+	color: white
+}
+
+.bold {
+	font-weight: bold;
 }
 
 </style>
