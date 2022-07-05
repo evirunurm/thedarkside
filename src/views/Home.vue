@@ -28,15 +28,16 @@ export default {
 			],
 			illustrations: [
 				{
-					src: "ms_bicho.png",
+					src: "illustrations/ms_bicho.png",
 					alt: "Bicho muy guay",
 				},
 				{
-					src: "ev_rana.png",
+					src: "illustrations/ev_rana.png",
 					alt: "La rana del mundo",
+					caption: "Muy guay"
 				},
 				{
-					src: "ms_bicho.png",
+					src: "illustrations/ms_bicho.png",
 					alt: "Bicho muy guay",
 				},
 			]

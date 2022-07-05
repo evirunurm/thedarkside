@@ -10,14 +10,11 @@
 			<div class="imgs-box" ref="imgsBox">
 				<div class="img-box" v-for="illustration in illustrations">
 					<figure>
-						<img :src="'public/illustrations/' + illustration.src" :alt="illustration.alt" class="illustration"
+						<img :src="'public/' + illustration.src" :alt="illustration.alt" class="illustration"
 							  :title="illustration.alt">
-						<figcaption class="figcaption">
-							{{ illustration.alt }}
+						<figcaption v-html="illustration.caption" class="figcaption">
 						</figcaption>
 					</figure>
-
-
 				</div>
 			</div>
 		</div>
@@ -75,13 +72,14 @@ export default {
 .illustration {
 	width: 100%;
 	height: 100%;
-	object-fit: contain;
+	object-fit: scale-down;
 }
 
 .img-box {
 	margin: 0;
 	min-width: 100%;
-	padding: 2rem;
+	display: flex;
+	align-items: center;
 }
 
 .imgs-box {
@@ -97,9 +95,7 @@ export default {
 	overflow: hidden;
 }
 
-
 .img-box figure {
-	height: 90%;
 	text-align: center;
 }
 
@@ -110,9 +106,18 @@ export default {
 	position: absolute;
 	z-index: 10;
 	transform: translateY(-50%);
-	top: 50%;
+	top: calc(50% - 1.9rem);
 	border: none;
 	cursor: pointer;
+	height: calc(100% - 1.9rem * 2);
+}
+
+.button:hover {
+	background: rgba(255, 255, 255, 0.25);
+}
+
+.button svg {
+	height: 2rem;
 }
 
 .button path {
@@ -126,6 +131,18 @@ export default {
 
 .button.button-after {
 	right: 0;
+}
+
+/* FIGURE */
+
+figcaption {
+	opacity: 0.75;
+	font-size: 0.9rem;
+	text-align: center;
+}
+
+figure {
+	margin-bottom: 1.9rem;
 }
 
 /* INFO */

@@ -63,5 +63,17 @@ h1, h2 {
 	margin-bottom: 0.75rem;
 }
 
+/* LINKS */
+
+a {
+	color: var(--accent);
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:hover {
+	text-decoration: line-through;
+}
+
 
 </style>
