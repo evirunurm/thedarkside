@@ -23,7 +23,8 @@
 		</button>
 
 		<nav v-if="navOpened" class="mobile-nav-container">
-			<transition name="slide">
+			<transition name="slide" appear>
+				<!--		"appear"	makes transition to work when it's inside "v-if"	-->
 				<div v-show="navOpened" class="mobile-nav mobile">
 					<router-link class="bold" @click="navOpened = false" to="/">Home</router-link>
 					<router-link class="bold" @click="navOpened = false" to="/exposicion">Sobre la Exposición</router-link>
@@ -94,6 +95,7 @@ header {
 	gap: 1rem;
 	font-size: 1.3rem;
 	padding-left: var(--margin);
+
 }
 
 .mobile-nav-container {

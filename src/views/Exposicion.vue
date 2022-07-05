@@ -41,7 +41,7 @@
 				</figcaption>
 			</figure>
 
-			<ArtCarousel/>
+			<ArtCarousel :illustrations="photosFirstEdition"/>
 		</article>
 		<article id="segunda-edicion">
 			<h2>Segunda edición</h2>
@@ -64,7 +64,6 @@ export default {
 		return {
 			photosFirstEdition: [
 				{
-					artist: "Mikel Sarrias",
 					src: "ms_bicho.png",
 					alt: "Bicho muy guay",
 				},

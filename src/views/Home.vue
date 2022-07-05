@@ -28,17 +28,14 @@ export default {
 			],
 			illustrations: [
 				{
-					artist: "Mikel Sarrias",
 					src: "ms_bicho.png",
 					alt: "Bicho muy guay",
 				},
 				{
-					artist: "Evelin Virunurm",
 					src: "ev_rana.png",
 					alt: "La rana del mundo",
 				},
 				{
-					artist: "Mikel Sarrias",
 					src: "ms_bicho.png",
 					alt: "Bicho muy guay",
 				},

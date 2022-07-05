@@ -9,8 +9,15 @@
 		<div class="imgs-container">
 			<div class="imgs-box" ref="imgsBox">
 				<div class="img-box" v-for="illustration in illustrations">
-					<img :src="'public/illustrations/' + illustration.src" :alt="illustration.alt" class="illustration"
-						  :title="illustration.alt + ', por ' + illustration.artist + '.'">
+					<figure>
+						<img :src="'public/illustrations/' + illustration.src" :alt="illustration.alt" class="illustration"
+							  :title="illustration.alt">
+						<figcaption class="figcaption">
+							{{ illustration.alt }}
+						</figcaption>
+					</figure>
+
+
 				</div>
 			</div>
 		</div>
@@ -77,7 +84,6 @@ export default {
 	padding: 2rem;
 }
 
-
 .imgs-box {
 	display: flex;
 	position: relative;
@@ -89,6 +95,12 @@ export default {
 .imgs-container {
 	width: 100%;
 	overflow: hidden;
+}
+
+
+.img-box figure {
+	height: 90%;
+	text-align: center;
 }
 
 /* buttons */
@@ -120,16 +132,14 @@ export default {
 .info {
 	position: absolute;
 	bottom: 0;
-	opacity: 1;
-
-	height: 2rem;
-	padding: 0.25rem 2rem;
+	font-size: 0.85rem;
+	padding: 0.25rem 1rem;
 	left: 50%;
 	transform: translateX(-50%);
 	border-radius: 100px;
 	display: grid;
 	place-items: center;
-	background: #efefef;
+	background: rgba(0, 0, 0, 0.06);
 }
 
 </style>
