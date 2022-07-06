@@ -6,15 +6,18 @@
 			class="bold">renovar la escena artística</span> de esta cuidad.
 		</p>
 		<button class="button" @click="randomArtist()">¡Conócenos!</button>
+
 	</main>
 </template>
 
 <script>
-import ArtCarousel from '../components/ArtCarousel.vue'
+import ArtCarousel from '../components/ArtCarousel.vue';
+
 
 export default {
 	components: {
-		ArtCarousel
+		ArtCarousel,
+
 	},
 	data() {
 		return {

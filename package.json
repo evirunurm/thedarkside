@@ -7,6 +7,9 @@
     "preview": "vite preview --port 4173"
   },
   "dependencies": {
+    "@fullcalendar/daygrid": "^5.11.0",
+    "@fullcalendar/interaction": "^5.11.0",
+    "@fullcalendar/vue": "^5.11.0",
     "vue": "^3.2.37",
     "vue-router": "^4.0.16"
   },

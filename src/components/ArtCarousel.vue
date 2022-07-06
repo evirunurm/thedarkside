@@ -10,7 +10,7 @@
 			<div class="imgs-box" ref="imgsBox">
 				<div class="img-box" v-for="illustration in illustrations">
 					<figure>
-						<img :src="'public/' + illustration.src" :alt="illustration.alt" class="illustration"
+						<img :src="'/' + illustration.src" :alt="illustration.alt" class="illustration"
 							  :title="illustration.alt">
 						<figcaption v-html="illustration.caption" class="figcaption">
 						</figcaption>
