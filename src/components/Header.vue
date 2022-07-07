@@ -1,6 +1,6 @@
 <template>
 	<header>
-		<p class="logo">Minerv<span class="bold">ART</span></p>
+		<router-link to="/"><p class="logo">Minerv<span class="bold">ART</span></p></router-link>
 		<button v-if="!navOpened" @click="navOpened = true" class="mobile-burger mobile">
 			<svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<path
@@ -22,15 +22,15 @@
 			</svg>
 		</button>
 
-		<nav v-if="navOpened" class="mobile-nav-container">
+		<nav v-if="navOpened" class="mobile-nav-container mobile">
 			<transition name="slide" appear>
 				<!--		"appear"	makes transition to work when it's inside "v-if"	-->
-				<div v-show="navOpened" class="mobile-nav mobile">
+				<div v-show="navOpened" class="mobile-nav">
 					<router-link class="bold" @click="navOpened = false" to="/">Home</router-link>
 					<router-link class="bold" @click="navOpened = false" to="/exposicion">Sobre la Exposición</router-link>
 					<div>
 						<a class="bold">Quiénes somos</a>
-						<ul class="artists-list">
+						<div class="artists-list">
 							<router-link @click="navOpened = false" to="/artistas/mikel-sarrias">Mikel Sarrias</router-link>
 							<router-link @click="navOpened = false" to="/artistas/evelin-virunurm">Evelin Virunurm
 							</router-link>
@@ -40,10 +40,48 @@
 							</router-link>
 							<router-link @click="navOpened = false" to="/artistas/andrea-gozalves">Andrea Gozalves
 							</router-link>
-						</ul>
+						</div>
 					</div>
 				</div>
 			</transition>
+		</nav>
+		<nav class="desktop-nav-container desktop">
+			<ul class="desktop-nav">
+				<li>
+					<router-link class="bold" to="/">Home</router-link>
+				</li>
+				<li>
+					<router-link class="bold" to="/exposicion">Sobre la Exposición</router-link>
+				</li>
+				<li class="bold hovereable">Quiénes somos</li>
+				<div class="artists-list-container">
+					<ul class="artists-list">
+						<li>
+							<router-link @click="navOpened = false" to="/artistas/mikel-sarrias">Mikel Sarrias</router-link>
+						</li>
+						<li>
+							<router-link @click="navOpened = false" to="/artistas/evelin-virunurm">Evelin Virunurm
+							</router-link>
+						</li>
+						<li>
+							<router-link @click="navOpened = false" to="/artistas/alonso-hogue">Alonso Hogue</router-link>
+						</li>
+						<li>
+							<router-link @click="navOpened = false" to="/artistas/karen-yaniz">Karen Yániz</router-link>
+						</li>
+						<li>
+							<router-link @click="navOpened = false" to="/artistas/alexander-rozinov">Alexander Rozinov
+							</router-link>
+						</li>
+						<li>
+							<router-link @click="navOpened = false" to="/artistas/andrea-gozalves">Andrea Gozalves
+							</router-link>
+						</li>
+
+					</ul>
+				</div>
+
+			</ul>
 		</nav>
 	</header>
 
@@ -55,6 +93,15 @@ export default {
 		return {
 			navOpened: false,
 		}
+	},
+	watch: {
+		navOpened() {
+			if (this.navOpened) {
+				document.getElementsByTagName("body")[0].parentNode.style.overflowY = "hidden";
+			} else {
+				document.getElementsByTagName("body")[0].parentNode.style.overflowY = "scroll";
+			}
+		}
 	}
 }
 </script>
@@ -62,6 +109,8 @@ export default {
 <style scoped>
 .logo {
 	font-size: 2rem;
+	color: black;
+	font-weight: normal;
 }
 
 .mobile-burger {
@@ -99,7 +148,7 @@ header {
 }
 
 .mobile-nav-container {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	overflow: hidden;
@@ -125,22 +174,26 @@ header {
 	margin-top: 0.75rem;
 }
 
+.artists-list a {
+	font-weight: normal;
+}
+
 .mobile-nav a {
 	text-decoration: none;
 	color: black;
 }
 
-.mobile-nav > a:hover, .mobile-nav > div > ul > a:hover {
+/* LINKS HOVER */
+.mobile-nav > a:hover, .mobile-nav .artists-list a:hover {
 	text-decoration: line-through;
-	color: black;
+	color: var(--accent);
 }
-
 
 .mobile-nav-container a:visited {
 	color: black;
 }
 
-
+/* ANIMATION */
 .slide-enter-active,
 .slide-leave-active {
 	transition: all 0.15s ease-in;
@@ -151,5 +204,91 @@ header {
 	transform: translateX(100%);
 }
 
+/* STOP SCROLLING */
+.stop-scrolling {
+	height: 100%;
+	overflow: hidden;
+}
 
+
+/* DESKTOP */
+
+.desktop {
+	display: none;
+}
+
+.desktop-nav-container {
+	width: 100%;
+	margin-left: 3rem;
+}
+
+.desktop-nav {
+	display: flex;
+	list-style: none;
+	justify-content: flex-end;
+	width: 100%;
+	gap: 0.5rem
+}
+
+.desktop-nav li {
+	padding: 0.5rem;
+}
+
+.desktop-nav li a {
+	color: black;
+}
+
+/* ARTISTS */
+
+.desktop-nav .artists-list-container {
+	display: none;
+	position: absolute;
+	top: 3rem;
+	z-index: 30;
+	background: white;
+}
+
+.desktop-nav .artists-list {
+	list-style: none;
+	margin: 0;
+	gap: 0;
+}
+
+.desktop-nav .artists-list li {
+	padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.desktop-nav .artists-list li:hover {
+	background: var(--accent);
+}
+
+.desktop-nav .artists-list li:hover a {
+	color: white;
+}
+
+
+/* HOVER */
+.hovereable {
+	cursor: pointer;
+}
+
+.hovereable:hover {
+	background: var(--accent);
+	color: white
+}
+
+/* Show "artists" section when hovered over itself or the button that giver access to it */
+.hovereable:hover ~ .artists-list-container, .artists-list-container:hover {
+	display: block;
+}
+
+@media (min-width: 750px) {
+	.mobile {
+		display: none;
+	}
+
+	.desktop {
+		display: block;
+	}
+}
 </style>

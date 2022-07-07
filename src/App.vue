@@ -1,6 +1,6 @@
 <template>
 	<Header/>
-	<RouterView/>
+	<RouterView class="main"/>
 	<Footer/>
 </template>
 
@@ -17,15 +17,19 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 :root {
 	--margin: 1.5rem;
-	--accent: goldenrod;
+	--accent: rgba(218, 165, 32, 0.6);
+	--green: rgba(11, 184, 86, 0.2);
 }
 
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	font-family: 'Poppins', sans-serif;
 }
 
 html {
@@ -75,5 +79,22 @@ a:hover {
 	text-decoration: line-through;
 }
 
+/* MAIN */
+
+/*body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}*/
+
+/* RESPONSIVE */
+
+.main, header, footer {
+	max-width: 1000px;
+}
+
+main, header, footer {
+	margin: auto;
+}
 
 </style>

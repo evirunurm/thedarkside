@@ -30,7 +30,7 @@
 					</ul>
 				</div>
 				<figure>
-					<img class="h-image" src="../../public/photos/2020/cartel_2020.jpg"
+					<img class="h-image" src="photos/2020/cartel_2020.jpg"
 						  alt="El cartel de la exposición de 2020."
 						  width="500">
 					<figcaption>
@@ -70,15 +70,15 @@
 					</ul>
 				</div>
 				<figure>
-					<img class="h-image" src="/public/photos/2021/cartel_2021.png" alt="">
+					<img class="h-image" src="photos/2021/cartel_2021.png" alt="">
 					<figcaption>
 						El cartel usado en la exposición de 2021, con los nombres de los artistas y una ilustración
 						representativa.
 					</figcaption>
 				</figure>
-				<ArtCarousel :illustrations="photosSecondEdition"/>
-			</div>
 
+			</div>
+			<ArtCarousel :illustrations="photosSecondEdition"/>
 		</article>
 		<article id="tercera-edicion">
 			<h2>Tercera edición</h2>
@@ -171,7 +171,8 @@ export default {
 
 <style scoped>
 main {
-	margin: 0 var(--margin);
+	padding: 0 var(--margin);
+	margin: auto;
 }
 
 p {
@@ -236,9 +237,22 @@ ul li:before {
 		gap: 1rem;
 	}
 
-	.h-section > figure {
-		max-width: 300px;
+	.h-section figure {
+		width: 45%;
 	}
+
+	.h-section div {
+		width: 55%;
+	}
+
+	article {
+		margin-bottom: 3rem;
+	}
+
+	h2 {
+		margin-bottom: 2rem;
+	}
+
 }
 
 </style>

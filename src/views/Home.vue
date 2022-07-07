@@ -1,6 +1,6 @@
 <template>
 	<main>
-		<ArtCarousel :illustrations="illustrations"/>
+		<ArtCarousel class="art-carousel" :illustrations="illustrations"/>
 		<p class="presentation">
 			Somos un <span class="bold">grupo de artistas</span> residentes en Pamplona, y nuestro propósito es <span
 			class="bold">renovar la escena artística</span> de esta cuidad.
@@ -56,14 +56,39 @@ export default {
 
 <style scoped>
 
+.art-carousel {
+	max-width: 500px;
+	margin: 2rem auto;
+}
+
 main {
-	margin: 0 var(--margin);
+	padding: 0 var(--margin);
+	margin: auto;
 }
 
 .presentation {
 	font-size: 1.25rem;
 	text-align: center;
 	margin: 1rem 0 3rem 0;
+}
+
+.button {
+	font-size: 1.15rem;
+	background: black;
+	color: white;
+}
+
+.button:hover {
+	background: white;
+	color: black;
+}
+
+
+@media (min-width: 600px) {
+	.art-carousel {
+		margin: 2rem auto;
+	}
+
 }
 
 </style>

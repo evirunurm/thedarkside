@@ -1,32 +1,35 @@
 <template>
 	<article class="calendar-container">
 		<p class="month">Agosto</p>
-		<ul class="weekdays">
-			<li>L</li>
-			<li>M</li>
-			<li>X</li>
-			<li>J</li>
-			<li>V</li>
-			<li>S</li>
-			<li>D</li>
-		</ul>
-		<ul ref="days" class="days">
-			<li v-for="(index, day) in 31"
-				 :class="[today.getDate() === index && today.getMonth() === 7 ? 'today': '']"
-				 @click="selectedDay = index"
-			>
-				{{ index }}
-			</li>
-		</ul>
+		<div class="calendar">
+			<ul class="weekdays">
+				<li>L</li>
+				<li>M</li>
+				<li>X</li>
+				<li>J</li>
+				<li>V</li>
+				<li>S</li>
+				<li>D</li>
+			</ul>
+			<ul ref="days" class="days">
+				<li v-for="index in 31"
+					 :class="[today.getDate() === index && today.getMonth() === 7 ? 'today': '', events.find(d => d.day === index) ? 'event' : '']"
+					 @click="selectedDay = index"
+				>
+					{{ index }}
+				</li>
+			</ul>
+		</div>
+
 		<transition name="fade">
 			<div v-show="selectedDay" class="event-container">
-				<p>{{ selectedDay }} de Agosto</p>
-				<p>
-					{{
-						weeks.find(day => day.day === selectedDay) ? weeks.find(day => day.day === selectedDay).name : 'No se han encontrado eventos.'
-					}}
+				<p class="bold event-date">{{ selectedDay }} de
+					Agosto{{ today.getDate() === selectedDay && today.getMonth() === 7 ? ' / Hoy' : '' }}</p>
+				<p v-html="events.find(d => d.day === selectedDay) ?
+							events.find(d => d.day === selectedDay).name :
+							'No se han encontrado eventos.'">
 				</p>
-				<button @click="selectedDay=null">Cerrar</button>
+				<button class="button" @click="selectedDay=null">Cerrar</button>
 			</div>
 		</transition>
 	</article>
@@ -37,11 +40,33 @@ export default {
 	data() {
 		return {
 			today: new Date(),
-			weeks: [
+			events: [
 				{
-					name: "Inauguración",
+					name: "Inauguración de la Exposición.",
 					day: 5,
-					importance: 1
+				}, {
+					name: "Último día de la Exposición",
+					day: 31,
+				}, {
+					name: `Exposición abierta:</br>
+					 18:00-20:00</br></br>
+					Artistas presentes:</br>
+					Evelin Virunurm, </br>
+					Mikel Sarrias, </br>
+					Alonso Hogue, </br>
+					Karen Yániz, </br>
+					Alex Rozinov, </br>
+					Andrea Gozalves.
+					`,
+					day: 6,
+				}, {
+					name: `Exposición abierta:</br>
+					 18:00-20:00</br></br>
+					Artistas presentes:</br>
+					Evelin Virunurm, </br>
+					Alonso Hogue, </br>
+					Alex Rozinov.`,
+					day: 10,
 				}
 			],
 			selectedDay: null,
@@ -59,7 +84,7 @@ export default {
 	display: flex;
 	flex-direction: column;
 	gap: 0.5rem;
-
+	width: 100%;
 }
 
 /* DAYS */
@@ -83,13 +108,18 @@ export default {
 	color: white;
 }
 
-.days .start {
+/* Styles for event days. Applied dynamically. */
+.days .event {
 	font-weight: bold;
+	color: white;
+	background: var(--accent);
+	opacity: 0.75;
 }
 
+
+/* Styles for today's date. Applied dynamically. */
 .today {
-	background: var(--accent);
-	color: white;
+	background: var(--green);
 	font-weight: bold;
 }
 
@@ -126,7 +156,8 @@ export default {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	width: 50vw;
+	width: 70vw;
+	max-width: 500px;
 	padding: 1rem;
 	display: flex;
 	flex-direction: column;
@@ -134,4 +165,33 @@ export default {
 	box-shadow: 8px 8px 20px rgba(14, 12, 66, 0.25);
 	border: 1px solid black;
 }
+
+.event-container button {
+	margin-right: 0;
+	margin-top: 0.75rem;
+	padding: 0.25rem 0.75rem;
+}
+
+.event-date {
+	border-bottom: 1px solid black;
+	padding: 0 0 0.5rem 0;
+	margin-bottom: 0.5rem;
+}
+
+/* RESPONSIVENESS */
+
+
+.calendar {
+	display: flex;
+	flex-direction: column;
+}
+
+@media (min-width: 500px) {
+	.calendar {
+		width: 500px;
+		align-self: center;
+	}
+}
+
+
 </style>
