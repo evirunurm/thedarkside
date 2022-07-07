@@ -21,30 +21,32 @@
 				<path d="M20 2L2 20" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
 			</svg>
 		</button>
-
-		<nav v-if="navOpened" class="mobile-nav-container mobile">
-			<transition name="slide" appear>
-				<!--		"appear"	makes transition to work when it's inside "v-if"	-->
-				<div v-show="navOpened" class="mobile-nav">
-					<router-link class="bold" @click="navOpened = false" to="/">Home</router-link>
-					<router-link class="bold" @click="navOpened = false" to="/exposicion">Sobre la Exposición</router-link>
-					<div>
-						<a class="bold">Quiénes somos</a>
-						<div class="artists-list">
-							<router-link @click="navOpened = false" to="/artistas/mikel-sarrias">Mikel Sarrias</router-link>
-							<router-link @click="navOpened = false" to="/artistas/evelin-virunurm">Evelin Virunurm
-							</router-link>
-							<router-link @click="navOpened = false" to="/artistas/alonso-hogue">Alonso Hogue</router-link>
-							<router-link @click="navOpened = false" to="/artistas/karen-yaniz">Karen Yániz</router-link>
-							<router-link @click="navOpened = false" to="/artistas/alexander-rozinov">Alexander Rozinov
-							</router-link>
-							<router-link @click="navOpened = false" to="/artistas/andrea-gozalves">Andrea Gozalves
-							</router-link>
+		<transition name="dissolve" appear>
+			<nav v-if="navOpened" class="mobile-nav-container mobile">
+				<transition name="slide" appear>
+					<!--		"appear"	makes transition to work when it's inside "v-if"	-->
+					<div v-show="navOpened" class="mobile-nav">
+						<router-link class="bold" @click="navOpened = false" to="/">Home</router-link>
+						<router-link class="bold" @click="navOpened = false" to="/exposicion">Sobre la Exposición
+						</router-link>
+						<div>
+							<a class="bold">Quiénes somos</a>
+							<div class="artists-list">
+								<router-link @click="navOpened = false" to="/artistas/mikel-sarrias">Mikel Sarrias</router-link>
+								<router-link @click="navOpened = false" to="/artistas/evelin-virunurm">Evelin Virunurm
+								</router-link>
+								<router-link @click="navOpened = false" to="/artistas/alonso-hogue">Alonso Hogue</router-link>
+								<router-link @click="navOpened = false" to="/artistas/karen-yaniz">Karen Yániz</router-link>
+								<router-link @click="navOpened = false" to="/artistas/alexander-rozinov">Alexander Rozinov
+								</router-link>
+								<router-link @click="navOpened = false" to="/artistas/andrea-gozalves">Andrea Gozalves
+								</router-link>
+							</div>
 						</div>
 					</div>
-				</div>
-			</transition>
-		</nav>
+				</transition>
+			</nav>
+		</transition>
 		<nav class="desktop-nav-container desktop">
 			<ul class="desktop-nav">
 				<li>
@@ -109,7 +111,7 @@ export default {
 <style scoped>
 .logo {
 	font-size: 2rem;
-	color: black;
+	color: var(--black);
 	font-weight: normal;
 }
 
@@ -180,7 +182,7 @@ header {
 
 .mobile-nav a {
 	text-decoration: none;
-	color: black;
+	color: var(--black);
 }
 
 /* LINKS HOVER */
@@ -190,10 +192,10 @@ header {
 }
 
 .mobile-nav-container a:visited {
-	color: black;
+	color: var(--black);
 }
 
-/* ANIMATION */
+/* MOBILE MENU ANIMATION */
 .slide-enter-active,
 .slide-leave-active {
 	transition: all 0.15s ease-in;
@@ -204,12 +206,21 @@ header {
 	transform: translateX(100%);
 }
 
+
+/* dissolve ANIMATION */
+.dissolve-leave-to {
+	opacity: 0;
+}
+
+.dissolve-leave-active {
+	transition: all 0.2s ease-out;
+}
+
 /* STOP SCROLLING */
 .stop-scrolling {
 	height: 100%;
 	overflow: hidden;
 }
-
 
 /* DESKTOP */
 
@@ -235,7 +246,7 @@ header {
 }
 
 .desktop-nav li a {
-	color: black;
+	color: var(--black);
 }
 
 /* ARTISTS */

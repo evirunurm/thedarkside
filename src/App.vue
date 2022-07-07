@@ -1,6 +1,10 @@
 <template>
 	<Header/>
-	<RouterView class="main"/>
+	<RouterView v-slot="{ Component }" class="main">
+		<transition name="route" mode="out-in">
+			<component :is="Component"></component>
+		</transition>
+	</RouterView>
 	<Footer/>
 </template>
 
@@ -23,6 +27,7 @@ export default {
 	--margin: 1.5rem;
 	--accent: rgba(218, 165, 32, 0.6);
 	--green: rgba(11, 184, 86, 0.2);
+	--black: rgba(25, 25, 25, 1);
 }
 
 * {
@@ -36,10 +41,14 @@ html {
 	scroll-behavior: smooth !important; /* So hrefs to ids scroll smoothly. */
 }
 
+body {
+	color: var(--black);
+}
+
 .button {
 	padding: 0.75rem 2rem;
 	background: none;
-	border: 1px solid black;
+	border: 1px solid var(--black);
 	transition: 0.2s ease-in-out;
 	margin: 0 auto;
 	cursor: pointer;
@@ -47,8 +56,8 @@ html {
 }
 
 .button:hover {
-	background: black;
-	border: 1px solid black;
+	background: var(--black);
+	border: 1px solid var(--black);
 	color: white
 }
 
@@ -62,7 +71,7 @@ h1 {
 
 h1, h2 {
 	width: 100%;
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid var(--black);
 	padding-bottom: 0.75rem;
 	margin-bottom: 0.75rem;
 }
@@ -89,12 +98,35 @@ a:hover {
 
 /* RESPONSIVE */
 
-.main, header, footer {
+.main, header {
 	max-width: 1000px;
 }
 
-main, header, footer {
+main, header {
 	margin: auto;
 }
+
+/* ROUTE ANIMATION */
+
+/* Route transitions */
+.route-enter-from {
+	opacity: 0;
+}
+
+.route-enter-active {
+	transition: all 0.5s ease-out;
+}
+
+.route-leave-to {
+	opacity: 0;
+}
+
+/* ARTISTS PAGES GENERAL STYLING */
+.title {
+	opacity: 0.5;
+	font-weight: normal;
+	padding: 0 0 1rem 0;
+}
+
 
 </style>

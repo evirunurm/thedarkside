@@ -14,8 +14,7 @@
 			<ul ref="days" class="days">
 				<li v-for="index in 31"
 					 :class="[today.getDate() === index && today.getMonth() === 7 ? 'today': '', events.find(d => d.day === index) ? 'event' : '']"
-					 @click="selectedDay = index"
-				>
+					 @click="selectedDay = index">
 					{{ index }}
 				</li>
 			</ul>
@@ -25,10 +24,12 @@
 			<div v-show="selectedDay" class="event-container">
 				<p class="bold event-date">{{ selectedDay }} de
 					Agosto{{ today.getDate() === selectedDay && today.getMonth() === 7 ? ' / Hoy' : '' }}</p>
+				<p v-if="events.find(d => d.day === selectedDay)" class="event-time">
+					Abierto: <br/>🕒 {{ events.find(d => d.day === selectedDay).time }}
+				</p>
 				<p v-html="events.find(d => d.day === selectedDay) ?
 							events.find(d => d.day === selectedDay).name :
-							'No se han encontrado eventos.'">
-				</p>
+							'No se han encontrado eventos.'"></p>
 				<button class="button" @click="selectedDay=null">Cerrar</button>
 			</div>
 		</transition>
@@ -44,13 +45,13 @@ export default {
 				{
 					name: "Inauguración de la Exposición.",
 					day: 5,
+					time: "18:00 - 20:00"
 				}, {
 					name: "Último día de la Exposición",
 					day: 31,
+					time: "18:00 - 20:00"
 				}, {
-					name: `Exposición abierta:</br>
-					 18:00-20:00</br></br>
-					Artistas presentes:</br>
+					name: `Artistas presentes:</br>
 					Evelin Virunurm, </br>
 					Mikel Sarrias, </br>
 					Alonso Hogue, </br>
@@ -59,14 +60,14 @@ export default {
 					Andrea Gozalves.
 					`,
 					day: 6,
+					time: "18:00 - 20:00"
 				}, {
-					name: `Exposición abierta:</br>
-					 18:00-20:00</br></br>
-					Artistas presentes:</br>
+					name: `Artistas presentes:</br>
 					Evelin Virunurm, </br>
 					Alonso Hogue, </br>
 					Alex Rozinov.`,
 					day: 10,
+					time: "18:00 - 20:00"
 				}
 			],
 			selectedDay: null,
@@ -79,7 +80,7 @@ export default {
 
 <style scoped>
 .calendar-container {
-	border-top: 1px solid black;
+	border-top: 1px solid var(--black);
 	margin: 2.5rem 0;
 	display: flex;
 	flex-direction: column;
@@ -163,7 +164,7 @@ export default {
 	flex-direction: column;
 	gap: 0.5rem;
 	box-shadow: 8px 8px 20px rgba(14, 12, 66, 0.25);
-	border: 1px solid black;
+	border: 1px solid var(--black);
 }
 
 .event-container button {
@@ -173,18 +174,30 @@ export default {
 }
 
 .event-date {
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid var(--black);
 	padding: 0 0 0.5rem 0;
 	margin-bottom: 0.5rem;
 }
 
 /* RESPONSIVENESS */
-
-
 .calendar {
 	display: flex;
 	flex-direction: column;
 }
+
+/* FADE ANIMATION */
+.fade-enter-from {
+	opacity: 0;
+}
+
+.fade-enter-active {
+	transition: all 0.25s ease-out;
+}
+
+.fade-leave-to {
+	opacity: 0;
+}
+
 
 @media (min-width: 500px) {
 	.calendar {

@@ -6,7 +6,7 @@
 			class="bold">renovar la escena artística</span> de esta cuidad.
 		</p>
 		<button class="button" @click="randomArtist()">¡Conócenos!</button>
-		<Calendar></Calendar>
+		<Calendar class="cal"></Calendar>
 	</main>
 </template>
 
@@ -31,17 +31,16 @@ export default {
 			],
 			illustrations: [
 				{
-					src: "illustrations/ms_bicho.png",
+					src: "illustrations/mikel/bicho.png",
 					alt: "Bicho muy guay",
 				},
 				{
-					src: "illustrations/ev_rana.png",
-					alt: "La rana del mundo",
-					caption: "Muy guay"
+					src: "illustrations/evelin/rana.png",
+					alt: "La rana del mundo, Evelin Virunurm",
 				},
 				{
-					src: "illustrations/ms_bicho.png",
-					alt: "Bicho muy guay",
+					src: "illustrations/alonso/heart.png",
+					alt: "Heart, Alonso Hogue",
 				},
 			]
 		}
@@ -74,15 +73,18 @@ main {
 
 .button {
 	font-size: 1.15rem;
-	background: black;
+	background: var(--black);
 	color: white;
 }
 
 .button:hover {
 	background: white;
-	color: black;
+	color: var(--black);
 }
 
+.cal {
+	margin-top: 4rem;
+}
 
 @media (min-width: 600px) {
 	.art-carousel {

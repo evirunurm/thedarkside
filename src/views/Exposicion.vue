@@ -6,6 +6,7 @@
 				<li><a href="#primera-edicion">Primera Edición</a></li>
 				<li><a href="#segunda-edicion">Segunda Edición</a></li>
 				<li><a href="#tercera-edicion">Tercera Edición</a></li>
+				<li><a href="#FAQ">Preguntas frecuentes</a></li>
 			</ul>
 		</article>
 		<article id="primera-edicion">
@@ -88,6 +89,36 @@
 				y a
 				<router-link to="">Andrea Gozalves!</router-link>
 			</p>
+		</article>
+		<article id="FAQ">
+			<h2>Preguntas frecuentes</h2>
+			<section>
+				<details>
+					<summary>¿<span class="bold">Dónde</span> se hace la exposicón?</summary>
+					<div class="h-section">
+						<p>En <a href="https://espaciosmedialuna.com/">Espacios Media Luna</a>, Calle Baja Navarra 34-36,
+							Pamplona. Cerca de la Plaza de las Merindades.</p>
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2926.8122191736666!2d-1.636921184001218!3d42.813454079159165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5093007e095555%3A0x4699b9aee670c2a8!2sEspacios%20Medialuna!5e0!3m2!1ses!2ses!4v1657234478340!5m2!1ses!2ses"
+							width="400" height="300" style="border:0;" loading="lazy"
+							referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+
+				</details>
+				<details>
+					<summary>¿La entrada <span class="bold">cuesta dinero?</span></summary>
+					<p>No, la entrada a la exposición es <span class="bold">gratuita</span>. Para entrar solo hay que tocar
+						el timbre, pero normalmente
+						estamos atentos a la puerta para abrir antes.</p>
+				</details>
+				<details>
+					<summary>Si me gusta algo de lo exponeis, ¿puedo <span class="bold">comprarlo</span>?</summary>
+					<p>La mayor parte de las cosas que exponemos están a la venta, ¡asi que <span class="bold">sí</span>!
+						<br/>En caso de que algo se venda, ponemos los precios directamente en frente de la obra. Pero si
+						tienes alguna duda, siempre habrá alguno de nosotros para resolverla.</p>
+				</details>
+			</section>
+
 		</article>
 	</main>
 </template>
@@ -220,15 +251,38 @@ ul li:before {
 	content: ">";
 	margin-right: 1rem;
 	font-weight: bold;
-	color: black;
+	color: var(--black);
 	display: inline-block; /* So text-decoration is not inherited from anchor */
 }
-
 
 /* H SECTION */
 
 .h-section div {
 	margin-bottom: 1rem;
+}
+
+/* FAQ */
+summary {
+	cursor: pointer;
+}
+
+summary:hover {
+	text-decoration: line-through;
+}
+
+details[open] summary ~ * {
+	animation: sweep .5s ease-in-out;
+}
+
+@keyframes sweep {
+	0% {
+		opacity: 0;
+		transform: translateX(-10px)
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0)
+	}
 }
 
 @media (min-width: 600px) {
@@ -249,7 +303,7 @@ ul li:before {
 		margin-bottom: 3rem;
 	}
 
-	h2 {
+	h2, h1 {
 		margin-bottom: 2rem;
 	}
 

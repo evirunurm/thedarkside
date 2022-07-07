@@ -2,7 +2,7 @@
 	<section class="carousel">
 		<button class="button button-before" @click="rotate(false)">
 			<svg width="19" height="35" viewBox="0 0 19 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<path d="M17 2L2 17.5L17 33" stroke="black" stroke-width="4" stroke-linecap="round"
+				<path d="M17 2L2 17.5L17 33" stroke="var(--black)" stroke-width="4" stroke-linecap="round"
 						stroke-linejoin="round"/>
 			</svg>
 		</button>
