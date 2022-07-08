@@ -21,8 +21,9 @@
 - ~~Change black from black to impure.~~
 
 
-- Cambiar el nombre del grupo.
 - Import dates to Calendar component.
 - Page for each artist.
 - Mouse must be cooler.
 - Import more images / illustrations to Home section Carousel.
+- Favicon
+- Cambiar el nombre del grupo.
