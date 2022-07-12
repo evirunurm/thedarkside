@@ -21,7 +21,7 @@
 
 			</div>
 			<figure>
-				<img class="h-image" src="/illustrations/evelin/cat_skull.png"
+				<img class="h-image" src="../../public/illustrations/evelin/cat_skull.PNG"
 					  alt="Dibujo de una calavera de un gato, con una polilla encima" width="400">
 				<figcaption>
 					Cat skull (2020)
@@ -55,7 +55,7 @@
 			Y, claramente, las polillas y las setas son un gran recuerso que utilizo en mi arte🍄🦋.
 		</p>
 		<figure>
-			<img class="h-image" src="/illustrations/evelin/rana.png"
+			<img class="h-image" src="../../public/illustrations/evelin/rana.png"
 				  alt="Dibujo de una rana en acuarela, con setas encima y una planta creciendo de ella." width="400">
 			<figcaption>
 				La rana del mundo (2022)
