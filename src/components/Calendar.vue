@@ -50,25 +50,7 @@ export default {
 					name: "Último día de la Exposición",
 					day: 31,
 					time: "18:00 - 20:00"
-				}, {
-					name: `Artistas presentes:</br>
-					Evelin Virunurm, </br>
-					Mikel Sarrias, </br>
-					Alonso Hogue, </br>
-					Karen Yániz, </br>
-					Alex Rozinov, </br>
-					Andrea Gozalves.
-					`,
-					day: 6,
-					time: "18:00 - 20:00"
-				}, {
-					name: `Artistas presentes:</br>
-					Evelin Virunurm, </br>
-					Alonso Hogue, </br>
-					Alex Rozinov.`,
-					day: 10,
-					time: "18:00 - 20:00"
-				}
+				},
 			],
 			selectedDay: null,
 

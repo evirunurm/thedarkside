@@ -45,6 +45,10 @@ const router = createRouter({
 			name: 'andrea-gozalves',
 			component: () => import('../views/AndreaGozalves.vue')
 		},
+		{
+			path: '/:pathMatch(.*)*',
+			component: () => import('../views/NotFound.vue')
+		}
 	]
 })
 

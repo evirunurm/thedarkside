@@ -103,7 +103,12 @@
 							width="400" height="300" style="border:0;" loading="lazy"
 							referrerpolicy="no-referrer-when-downgrade"></iframe>
 					</div>
-
+				</details>
+				<details>
+					<summary>¿<span class="bold">Cuándo</span> se puede ir a ver la exposicion?</summary>
+					<p>La exposición estará abierta del <span class="bold">5 al 31 de agosto</span>, todos los martes,
+						viernes y sábados de 18:00 a
+						20:00. En todo momento intentaremos estar ahí alguno de los artistas.</p>
 				</details>
 				<details>
 					<summary>¿La entrada <span class="bold">cuesta dinero?</span></summary>
@@ -117,6 +122,7 @@
 						<br/>En caso de que algo se venda, ponemos los precios directamente en frente de la obra. Pero si
 						tienes alguna duda, siempre habrá alguno de nosotros para resolverla.</p>
 				</details>
+
 			</section>
 
 		</article>

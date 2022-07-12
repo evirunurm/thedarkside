@@ -68,9 +68,9 @@
 						<li>
 							<router-link @click="navOpened = false" to="/artistas/alonso-hogue">Alonso Hogue</router-link>
 						</li>
-						<li>
-							<router-link @click="navOpened = false" to="/artistas/karen-yaniz">Karen Yániz</router-link>
-						</li>
+						<!--						<li>
+													<router-link @click="navOpened = false" to="/artistas/karen-yaniz">Karen Yániz</router-link>
+												</li>-->
 						<li>
 							<router-link @click="navOpened = false" to="/artistas/alexander-rozinov">Alexander Rozinov
 							</router-link>

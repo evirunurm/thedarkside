@@ -23,6 +23,12 @@
 
 - Import dates to Calendar component.
 - Page for each artist.
+    - ~~Evelin~~
+    - Alonso
+    - Mikel
+    - Alex
+    - Karen
+    - Andrea
 - Mouse must be cooler.
 - Import more images / illustrations to Home section Carousel.
 - Favicon

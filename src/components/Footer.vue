@@ -1,7 +1,8 @@
 <template>
 	<footer>
-		<div class="credits"><a href="https://espaciosmedialuna.com/"><img
-			src="/src/assets/MediaLunaLogo.svg" alt=""></a></div>
+		<div class="credits">
+			<a href="https://espaciosmedialuna.com/"><img
+				src="/src/assets/MediaLunaLogo.svg" alt=""></a></div>
 		<p class="copyright">Copyright © 2022 | Evelin Virunurm</p>
 	</footer>
 </template>
@@ -11,6 +12,9 @@ p {
 	color: white;
 }
 
+.credits {
+	max-width: 150px;
+}
 
 .copyright {
 	opacity: 0.75;
