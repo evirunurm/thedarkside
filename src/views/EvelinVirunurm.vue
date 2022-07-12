@@ -21,7 +21,7 @@
 
 			</div>
 			<figure>
-				<img class="h-image" src="../../public/illustrations/evelin/cat_skull.PNG"
+				<img class="h-image" src="../../public/illustrations/evelin/broken.png"
 					  alt="Dibujo de una calavera de un gato, con una polilla encima" width="400">
 				<figcaption>
 					Cat skull (2020)
