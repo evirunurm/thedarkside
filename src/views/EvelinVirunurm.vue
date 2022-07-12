@@ -16,7 +16,7 @@
 					Mis ilustraciones se podrían definir como más <span class="bold">gráficas</span> que poéticas.
 					Normalmente no cuento historias, al menos no aposta. Simplemente trato de pulir al máximo la parte
 					estética, y si naturalmente
-					sale una <span class="bold">navarración soterrada</span>, perfecto.
+					sale una <span class="bold">narración soterrada</span>, perfecto.
 				</p>
 
 			</div>
@@ -29,7 +29,7 @@
 			</figure>
 		</section>
 		<p>
-			Mis dibujos de hace años se definian por el excesivo uso del negro, temática oscuro, paleta de
+			Mis dibujos de hace años se definían por el excesivo uso del negro, temática oscuro, paleta de
 			colores fríos... Pero, en el último año, he estado explorando más el mundo del <span
 			class="bold">color</span>, la acuarela y las texturas.
 			algo más de lado el dibujo digital, que hasta ahora había sido predominante en mi arte.
@@ -52,7 +52,7 @@
 			href="https://www.instagram.com/tiri.art/?hl=en">Tiri</a>), pero ahora me veo más inspirada por fotografías y
 			el pasado. Gran parte de mis ilustraciones, aunque en un principio no
 			trato de que representen nada, acaban contando algo sobre mi infancia.<br/>
-			Y, claramente, las polillas y las setas son un gran recuerso que utilizo en mi arte🍄🦋.
+			Y, claramente, las polillas y las setas son un gran recurso que utilizo en mi arte 🍄🦋.
 		</p>
 		<figure>
 			<img class="h-image" src="../../public/illustrations/evelin/rana.png"
