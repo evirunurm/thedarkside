@@ -31,7 +31,7 @@
 					</ul>
 				</div>
 				<figure>
-					<img class="h-image" src="photos/2020/cartel_2020.jpg"
+					<img class="h-image" src="public/photos/2020/cartel_2020.jpg"
 						  alt="El cartel de la exposición de 2020."
 						  width="500">
 					<figcaption>

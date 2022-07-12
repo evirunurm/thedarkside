@@ -31,5 +31,5 @@
     - Andrea
 - Mouse must be cooler.
 - Import more images / illustrations to Home section Carousel.
-- Favicon
+- ~~Favicon~~
 - Cambiar el nombre del grupo.

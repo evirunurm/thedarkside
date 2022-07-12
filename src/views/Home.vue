@@ -32,7 +32,7 @@ export default {
 			illustrations: [
 				{
 					src: "illustrations/mikel/bicho.png",
-					alt: "Bicho muy guay",
+					alt: "",
 				},
 				{
 					src: "illustrations/evelin/rana.png",
