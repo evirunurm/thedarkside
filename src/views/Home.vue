@@ -47,7 +47,8 @@ export default {
 	},
 	methods: {
 		randomArtist() {
-			this.$router.push(this.artistRoutes[Math.floor(Math.random() * this.artistRoutes.length)]);
+			this.$router.push("/exposicion");
+			// this.$router.push(this.artistRoutes[Math.floor(Math.random() * this.artistRoutes.length)]);
 		}
 	}
 }
