@@ -32,7 +32,7 @@
 			Mis dibujos de hace años se definían por el excesivo uso del negro, temática oscuro, paleta de
 			colores fríos... Pero, en el último año, he estado explorando más el mundo del <span
 			class="bold">color</span>, la acuarela y las texturas.
-			algo más de lado el dibujo digital, que hasta ahora había sido predominante en mi arte.
+			Dejé algo más de lado el dibujo digital, que hasta ahora había sido predominante en mi arte.
 		</p>
 		<p>
 			El <span
