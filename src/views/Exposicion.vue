@@ -71,7 +71,7 @@
 					</ul>
 				</div>
 				<figure>
-					<img class="h-image" src="photos/2021/cartel_2021.png" alt="">
+					<img class="h-image" src="../../public/photos/2021/cartel_2021.png" alt="">
 					<figcaption>
 						El cartel usado en la exposición de 2021, con los nombres de los artistas y una ilustración
 						representativa.
