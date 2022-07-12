@@ -29,8 +29,8 @@
 			</figure>
 		</section>
 		<p>
-			Hasta hace nada mis dibujos se definian por el excesivo uso del negro, temática oscuro, paleta de
-			colores fríos. Pero, en el último año, he estado explorando más el mundo del <span
+			Mis dibujos de hace años se definian por el excesivo uso del negro, temática oscuro, paleta de
+			colores fríos... Pero, en el último año, he estado explorando más el mundo del <span
 			class="bold">color</span>, la acuarela y las texturas.
 			algo más de lado el dibujo digital, que hasta ahora había sido predominante en mi arte.
 		</p>
@@ -43,7 +43,7 @@
 			las maneras de hacer arte gráfico más <span class="bold">terapéutica</span> que he encontrado.
 		</p>
 		<p>
-			Hasta hace nada, lo que más me <span class="bold">inspiraba</span> para crear eran otros artistas (<a
+			Hasta hace poco, lo que más me <span class="bold">inspiraba</span> para crear eran otros artistas (<a
 			target="_blank"
 			href="https://www.faunwood.com/portfolio">Miranda
 			Zimmerman</a>, <a target="_blank" href="https://www.instagram.com/behemot_crta_stvari/?hl=en">Behemot Crta
