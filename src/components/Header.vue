@@ -1,6 +1,8 @@
 <template>
 	<header>
-		<router-link to="/"><p class="logo">Minerv<span class="bold">ART</span></p></router-link>
+		<router-link to="/">
+			<img src="../assets/logo.png" alt="Logotipo de TheDarkSide">
+		</router-link>
 		<button v-if="!navOpened" @click="navOpened = true" class="mobile-burger mobile">
 			<svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<path
