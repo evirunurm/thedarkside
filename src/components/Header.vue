@@ -1,7 +1,7 @@
 <template>
 	<header>
 		<router-link to="/">
-			<img src="../assets/logo.png" alt="Logotipo de TheDarkSide">
+			<img class="logo" src="../assets/logo.png" alt="Logotipo de TheDarkSide">
 		</router-link>
 		<button v-if="!navOpened" @click="navOpened = true" class="mobile-burger mobile">
 			<svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -70,9 +70,9 @@
 						<li>
 							<router-link @click="navOpened = false" to="/artistas/alonso-hogue">Alonso Hogue</router-link>
 						</li>
-						<!--						<li>
-													<router-link @click="navOpened = false" to="/artistas/karen-yaniz">Karen Yániz</router-link>
-												</li>-->
+						<li>
+							<router-link @click="navOpened = false" to="/artistas/karen-yaniz">Karen Yániz</router-link>
+						</li>
 						<li>
 							<router-link @click="navOpened = false" to="/artistas/alexander-rozinov">Alexander Rozinov
 							</router-link>
@@ -112,9 +112,9 @@ export default {
 
 <style scoped>
 .logo {
-	font-size: 2rem;
-	color: var(--black);
-	font-weight: normal;
+	max-width: 500px;
+	width: 90%;
+	margin-top: 0.75rem;
 }
 
 .mobile-burger {

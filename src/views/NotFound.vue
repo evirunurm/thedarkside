@@ -9,6 +9,6 @@
 
 <style scoped>
 main {
-	margin: var(--margin) var(--margin) 5rem var(--margin);
+	padding: var(--margin) var(--margin) 5rem var(--margin);
 }
 </style>

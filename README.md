@@ -32,4 +32,4 @@
 - Mouse must be cooler.
 - Import more images / illustrations to Home section Carousel.
 - ~~Favicon~~
-- Cambiar el nombre del grupo.
+- ~~Cambiar el nombre del grupo + Logo~~
