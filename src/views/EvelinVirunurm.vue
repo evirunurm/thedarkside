@@ -22,9 +22,9 @@
 			</div>
 			<figure>
 				<img class="h-image" src="../../public/illustrations/evelin/broken.png"
-					  alt="Dibujo de una calavera de un gato, con una polilla encima" width="400">
+					  alt="Dibujo de una chica desnuda" width="400">
 				<figcaption>
-					Cat skull (2020)
+					Broken (2021)
 				</figcaption>
 			</figure>
 		</section>
