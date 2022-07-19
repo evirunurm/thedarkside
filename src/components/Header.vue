@@ -34,11 +34,11 @@
 						<div>
 							<a class="bold">Quiénes somos</a>
 							<div class="artists-list">
-								<router-link @click="navOpened = false" to="/artistas/mikel-sarrias">Mikel Sarrias</router-link>
 								<router-link @click="navOpened = false" to="/artistas/evelin-virunurm">Evelin Virunurm
 								</router-link>
-								<router-link @click="navOpened = false" to="/artistas/alonso-hogue">Alonso Hogue</router-link>
 								<router-link @click="navOpened = false" to="/artistas/karen-yaniz">Karen Yániz</router-link>
+								<router-link @click="navOpened = false" to="/artistas/mikel-sarrias">Mikel Sarrias</router-link>
+								<router-link @click="navOpened = false" to="/artistas/alonso-hogue">Alonso Hogue</router-link>
 								<router-link @click="navOpened = false" to="/artistas/alexander-rozinov">Alexander Rozinov
 								</router-link>
 								<router-link @click="navOpened = false" to="/artistas/andrea-gozalves">Andrea Gozalves
@@ -61,18 +61,20 @@
 				<div class="artists-list-container">
 					<ul class="artists-list">
 						<li>
-							<router-link @click="navOpened = false" to="/artistas/mikel-sarrias">Mikel Sarrias</router-link>
-						</li>
-						<li>
 							<router-link @click="navOpened = false" to="/artistas/evelin-virunurm">Evelin Virunurm
 							</router-link>
 						</li>
 						<li>
-							<router-link @click="navOpened = false" to="/artistas/alonso-hogue">Alonso Hogue</router-link>
-						</li>
-						<li>
 							<router-link @click="navOpened = false" to="/artistas/karen-yaniz">Karen Yániz</router-link>
 						</li>
+						<li>
+							<router-link @click="navOpened = false" to="/artistas/mikel-sarrias">Mikel Sarrias</router-link>
+						</li>
+
+						<li>
+							<router-link @click="navOpened = false" to="/artistas/alonso-hogue">Alonso Hogue</router-link>
+						</li>
+
 						<li>
 							<router-link @click="navOpened = false" to="/artistas/alexander-rozinov">Alexander Rozinov
 							</router-link>

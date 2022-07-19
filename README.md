@@ -27,7 +27,7 @@
     - Alonso
     - Mikel
     - Alex
-    - Karen
+    - ~~Karen~~
     - Andrea
 - Mouse must be cooler.
 - Import more images / illustrations to Home section Carousel.

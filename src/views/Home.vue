@@ -30,10 +30,7 @@ export default {
 				"/artistas/andrea-gozalves",
 			],
 			illustrations: [
-				{
-					src: "illustrations/mikel/bicho.png",
-					alt: "",
-				},
+
 				{
 					src: "illustrations/evelin/rana.png",
 					alt: "La rana del mundo, Evelin Virunurm",
@@ -41,6 +38,13 @@ export default {
 				{
 					src: "illustrations/alonso/heart.png",
 					alt: "Heart, Alonso Hogue",
+				},
+				{
+					src: "illustrations/karen/automata_2021_square.png",
+					alt: "Autómata, por Karen Yániz (2021)",
+				}, {
+					src: "illustrations/mikel/bicho.png",
+					alt: "",
 				},
 			]
 		}
