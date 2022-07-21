@@ -106,9 +106,13 @@
 				</details>
 				<details>
 					<summary>¿<span class="bold">Cuándo</span> se puede ir a ver la exposicion?</summary>
-					<p>La exposición estará abierta del <span class="bold">5 al 31 de agosto</span>, todos los martes,
-						viernes y sábados de 18:00 a
-						20:00. En todo momento intentaremos estar ahí alguno de los artistas.</p>
+					<p>La exposición estará abierta del <span class="bold">5 al 31 de agosto</span>, todos los miércoles,
+						jueves y sábados de 18:00 a
+						20:00. En todo momento intentaremos estar ahí alguno de los artistas, pero en el calendario de la
+						<router-link class="bold" to="/">página principal</router-link>
+						tendrá información más actualizada de quiénes estaremos y a qué horas cuando se vayan acercando las
+						fechas.
+					</p>
 				</details>
 				<details>
 					<summary>¿La entrada <span class="bold">cuesta dinero?</span></summary>
