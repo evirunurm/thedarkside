@@ -46,8 +46,54 @@ export default {
 					name: "Inauguración de la Exposición.",
 					day: 5,
 					time: "18:00 - 20:00"
+				},
+				/* Sábados: */
+				{
+					name: "Presentes: Evelin Virunurm, Alex Rozinov, Karen Yániz, Alonso Hogue, Mikel Sarrias, Andrea Gozalves.",
+					day: 6,
+					time: "18:00 - 20:00"
 				}, {
-					name: "Último día de la Exposición",
+					name: "Presentes: Evelin Virunurm, Alex Rozinov, Karen Yániz, Alonso Hogue, Mikel Sarrias, Andrea Gozalves.",
+					day: 13,
+					time: "18:00 - 20:00"
+				}, {
+					name: "Presentes: Evelin Virunurm, Alex Rozinov, Karen Yániz, Alonso Hogue, Mikel Sarrias, Andrea Gozalves.",
+					day: 20,
+					time: "18:00 - 20:00"
+				}, {
+					name: "Presentes: Evelin Virunurm, Alex Rozinov, Karen Yániz, Alonso Hogue, Mikel Sarrias, Andrea Gozalves.",
+					day: 27,
+					time: "18:00 - 20:00"
+				},
+				/* Miércoles: */
+				{
+					name: "Presentes: Evelin Virunurm, Alex Rozinov, Alonso Hogue.",
+					day: 10,
+					time: "18:00 - 20:00"
+				}, {
+					name: "Presentes: Evelin Virunurm, Alex Rozinov, Alonso Hogue.",
+					day: 17,
+					time: "18:00 - 20:00"
+				}, {
+					name: "Presentes: Evelin Virunurm, Alex Rozinov, Alonso Hogue.",
+					day: 24,
+					time: "18:00 - 20:00"
+				},
+				/* Jueves: */
+				{
+					name: "Presentes: Karen Yániz, Mikel Sarrias, Andrea Gozalves.",
+					day: 11,
+					time: "18:00 - 20:00"
+				}, {
+					name: "Presentes: Karen Yániz, Mikel Sarrias, Andrea Gozalves.",
+					day: 18,
+					time: "18:00 - 20:00"
+				}, {
+					name: "Presentes: Karen Yániz, Mikel Sarrias, Andrea Gozalves.",
+					day: 25,
+					time: "18:00 - 20:00"
+				}, {
+					name: "Último día de la Exposición. Presentes: Evelin Virunurm, Alex Rozinov, Karen Yániz, Alonso Hogue, Mikel Sarrias, Andrea Gozalves.",
 					day: 31,
 					time: "18:00 - 20:00"
 				},
