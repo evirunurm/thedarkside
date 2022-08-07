@@ -49,7 +49,7 @@ export default {
 				},
 				/* Sábados: */
 				{
-					name: "Presentes: Evelin Virunurm, Alex Rozinov, Karen Yániz, Alonso Hogue, Mikel Sarrias, Andrea Gozalves.",
+					name: "Presentes: Evelin Virunurm, Alex Rozinov, Karen Yániz, Mikel Sarrias.",
 					day: 6,
 					time: "18:00 - 20:00"
 				}, {
@@ -67,29 +67,29 @@ export default {
 				},
 				/* Miércoles: */
 				{
-					name: "Presentes: Evelin Virunurm, Alex Rozinov, Alonso Hogue.",
+					name: "Presentes: Evelin Virunurm, Alex Rozinov, Karen Yániz, Alonso Hogue, Mikel Sarrias, Andrea Gozalves.",
 					day: 10,
 					time: "18:00 - 20:00"
 				}, {
-					name: "Presentes: Evelin Virunurm, Alex Rozinov, Alonso Hogue.",
+					name: "Presentes: Evelin Virunurm, Alex Rozinov, Karen Yániz, Alonso Hogue, Mikel Sarrias, Andrea Gozalves.",
 					day: 17,
 					time: "18:00 - 20:00"
 				}, {
-					name: "Presentes: Evelin Virunurm, Alex Rozinov, Alonso Hogue.",
+					name: "Presentes: Evelin Virunurm, Alex Rozinov, Karen Yániz, Alonso Hogue, Mikel Sarrias, Andrea Gozalves.",
 					day: 24,
 					time: "18:00 - 20:00"
 				},
 				/* Jueves: */
 				{
-					name: "Presentes: Karen Yániz, Mikel Sarrias, Andrea Gozalves.",
+					name: "Presentes: Karen Yániz, Mikel Sarrias, Andrea Gozalves, Alex Rozinov.",
 					day: 11,
 					time: "18:00 - 20:00"
 				}, {
-					name: "Presentes: Karen Yániz, Mikel Sarrias, Andrea Gozalves.",
+					name: "Presentes: Karen Yániz, Mikel Sarrias, Andrea Gozalves, Alex Rozinov.",
 					day: 18,
 					time: "18:00 - 20:00"
 				}, {
-					name: "Presentes: Karen Yániz, Mikel Sarrias, Andrea Gozalves.",
+					name: "Presentes: Karen Yániz, Mikel Sarrias, Andrea Gozalves, Alex Rozinov.",
 					day: 25,
 					time: "18:00 - 20:00"
 				}, {
@@ -99,10 +99,8 @@ export default {
 				},
 			],
 			selectedDay: null,
-
 		}
 	},
-	methods: {},
 }
 </script>
 

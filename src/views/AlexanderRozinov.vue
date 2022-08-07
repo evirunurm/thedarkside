@@ -18,7 +18,6 @@
 			En este último año, lo que más me ha interesado es reforzar mis composiciones mediante la sinergía del diseño
 			gráfico y las paletas de colores definidos y saturados.
 		</p>
-
 		<p>
 			Por el camino también me interesé por la creación de música, y rápidamente se convirtió en mi segunda grán
 			pasión.<br/>
@@ -30,11 +29,16 @@
 			puesto en práctica las cosas que he aprendido a lo largo de los años con
 			mis experiencias en el internet de la década de los 2000 como ancla temático.
 		</p>
-
 		<p>
 			¿El próximo paso? Crear una ilustración que genere música. ¿O una canción que vaya a generar una ilustración?
 		</p>
-
+		<ul class="links">
+			<li><a href="https://twitter.com/mort_ara">Twitter</a></li>
+			<li><a href="https://aramort.newgrounds.com/">Newgrounds</a></li>
+			<li>
+				<a href="https://www.instagram.com/ara_mort/">Instagram</a>
+			</li>
+		</ul>
 	</main>
 </template>
 
@@ -64,6 +68,14 @@ figcaption {
 
 p {
 	padding: 0 0 1rem 0;
+}
+
+.links {
+	list-style: none;
+}
+
+.links li:before {
+	content: "> ";
 }
 
 @media (min-width: 600px) {

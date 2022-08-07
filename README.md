@@ -1,7 +1,7 @@
 ## Todo list:
 
 - ~~Art Carousel~~
-- Footer
+- ~~Footer~~
 - ~~Header~~
 - ~~Exposition Page.~~
 - ~~Desktop menu~~
@@ -21,15 +21,16 @@
 - ~~Change black from black to impure.~~
 
 
-- Import dates to Calendar component.
+- ~~Import dates to Calendar component.~~
 - Page for each artist.
     - ~~Evelin~~
     - Alonso
     - Mikel
-    - Alex
+    - ~~Alex~~
     - ~~Karen~~
     - Andrea
 - Mouse must be cooler.
-- Import more images / illustrations to Home section Carousel.
+- ~~Import more images / illustrations to Home section Carousel.~~
 - ~~Favicon~~
 - ~~Cambiar el nombre del grupo + Logo~~
+- Add links to Alex Rozinov's bio

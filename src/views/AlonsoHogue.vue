@@ -1,7 +1,17 @@
 <template>
 	<main>
 		<h1>Alonso Hogue</h1>
-		<p class="warning">En proceso...</p>
+		<h3 class="title">Productor musical / Artista Visual</h3>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p>
+			
+		</p>
+		<figure class="blood-stream">
+			<img src="../../public/illustrations/alonso/blood.png" alt="Horizontal stream of blood, 3D." height="300">
+			<figcaption>(2022)</figcaption>
+		</figure>
 	</main>
 
 
@@ -11,7 +21,6 @@
 main {
 	padding: 0 var(--margin);
 }
-
 
 .h-section div {
 	margin-bottom: 1rem;
@@ -33,6 +42,12 @@ figcaption {
 
 p {
 	padding: 0 0 1rem 0;
+}
+
+/* BLOOD IMAGE FIGURE*/
+.blood-stream {
+	width: 100%;
+	overflow: hidden;
 }
 
 @media (min-width: 600px) {
