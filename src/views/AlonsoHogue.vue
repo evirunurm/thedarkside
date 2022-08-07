@@ -2,11 +2,21 @@
 	<main>
 		<h1>Alonso Hogue</h1>
 		<h3 class="title">Productor musical / Artista Visual</h3>
-		<p></p>
-		<p></p>
-		<p></p>
+		<p>Hola, soy Alonso, y tengo un grán interés por todo tipo de expresión estética.
+			Desde pequeño siempre me ha gustado crear cosas, a los 11 empezé a montar
+			pequeños cortos de “stopmotion” con recortes de papel. En unos años migré al
+			entorno digital, editando mis primeros videos para youtube.</p>
+		<p>A su vez, siempre hetenido una gran fascinación por la música. A los 16 empecé a
+			escribir mis primeras canciones , y con los años (Tengo21) estas se han convertido
+			en mi pasión principal y en el nucleo de mi produccion artística, justo con la musica produzco videos
+			compuestos por una mezcla de animación, modelaje 3D, y
+			técnicas de diseño gráfico.</p>
+		<p>Los diseños que estoy exponiendo son apturas y variaciones del arte que
+			produzco para mis canciones, si estás intersad@ en ver mas, haz click <a href="https://colorless.netlify.app/">aquí</a>.
+		</p>
 		<p>
-			
+			Actualmente soy estudiante de Animación y VFX en Creanavarra, y anteriormente
+			hice un bachillerato artístico en la Escuela de Arte y Superior De Diseño de Pamplona.
 		</p>
 		<figure class="blood-stream">
 			<img src="../../public/illustrations/alonso/blood.png" alt="Horizontal stream of blood, 3D." height="300">

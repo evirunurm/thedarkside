@@ -33,4 +33,4 @@
 - ~~Import more images / illustrations to Home section Carousel.~~
 - ~~Favicon~~
 - ~~Cambiar el nombre del grupo + Logo~~
-- Add links to Alex Rozinov's bio
+- ~~Add links to Alex Rozinov's bio~~
