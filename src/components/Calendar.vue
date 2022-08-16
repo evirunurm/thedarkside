@@ -53,48 +53,64 @@ export default {
 					day: 6,
 					time: "18:00 - 20:00"
 				}, {
-					name: "Presentes: Evelin Virunurm, Alex Rozinov, Karen Yániz, Alonso Hogue, Mikel Sarrias, Andrea Gozalves.",
+					name: "Presentes: Evelin Virunurm, Alex Rozinov, Karen Yániz, Alonso Hogue, Andrea Gozalves.",
 					day: 13,
 					time: "18:00 - 20:00"
 				}, {
-					name: "Presentes: Evelin Virunurm, Alex Rozinov, Karen Yániz, Alonso Hogue, Mikel Sarrias, Andrea Gozalves.",
+					name: "Presentes: Evelin Virunurm, Alex Rozinov, Karen Yániz, Alonso Hogue, Andrea Gozalves, Mikel Sarrias.",
 					day: 20,
 					time: "18:00 - 20:00"
 				}, {
-					name: "Presentes: Evelin Virunurm, Alex Rozinov, Karen Yániz, Alonso Hogue, Mikel Sarrias, Andrea Gozalves.",
+					name: "Presentes: Evelin Virunurm, Alex Rozinov, Karen Yániz, Alonso Hogue, Andrea Gozalves, Mikel Sarrias.",
 					day: 27,
 					time: "18:00 - 20:00"
 				},
 				/* Miércoles: */
 				{
-					name: "Presentes: Evelin Virunurm, Alex Rozinov, Karen Yániz, Alonso Hogue, Mikel Sarrias, Andrea Gozalves.",
+					name: "Presentes: Evelin Virunurm, Alex Rozinov, Karen Yániz, Alonso Hogue, Mikel Sarrias.",
 					day: 10,
 					time: "18:00 - 20:00"
 				}, {
-					name: "Presentes: Evelin Virunurm, Alex Rozinov, Karen Yániz, Alonso Hogue, Mikel Sarrias, Andrea Gozalves.",
+					name: "Presentes: Evelin Virunurm, Alex Rozinov, Karen Yániz, Alonso Hogue, Mikel Sarrias.",
 					day: 17,
 					time: "18:00 - 20:00"
 				}, {
-					name: "Presentes: Evelin Virunurm, Alex Rozinov, Karen Yániz, Alonso Hogue, Mikel Sarrias, Andrea Gozalves.",
+					name: "Presentes: Evelin Virunurm, Alex Rozinov, Karen Yániz, Alonso Hogue, Mikel Sarrias.",
 					day: 24,
 					time: "18:00 - 20:00"
 				},
 				/* Jueves: */
 				{
-					name: "Presentes: Karen Yániz, Mikel Sarrias, Andrea Gozalves, Alex Rozinov.",
+					name: "Presentes: Karen Yániz, Alex Rozinov, Evelin Virunurm, Alonso Hogue.",
 					day: 11,
 					time: "18:00 - 20:00"
 				}, {
-					name: "Presentes: Karen Yániz, Mikel Sarrias, Andrea Gozalves, Alex Rozinov.",
+					name: "Presentes: Karen Yániz, Mikel Sarrias, Alex Rozinov, Evelin Virunurm, Alonso Hogue.",
 					day: 18,
 					time: "18:00 - 20:00"
 				}, {
-					name: "Presentes: Karen Yániz, Mikel Sarrias, Andrea Gozalves, Alex Rozinov.",
+					name: "Presentes: Karen Yániz, Mikel Sarrias, Alex Rozinov, Evelin Virunurm, Alonso Hogue.",
 					day: 25,
 					time: "18:00 - 20:00"
 				}, {
-					name: "Último día de la Exposición. Presentes: Evelin Virunurm, Alex Rozinov, Karen Yániz, Alonso Hogue, Mikel Sarrias, Andrea Gozalves.",
+					name: "Último día de la Exposición. Presentes: Evelin Virunurm, Alex Rozinov, Karen Yániz, Alonso Hogue, Andrea Gozalves, Mikel Sarrias.",
 					day: 31,
+					time: "18:00 - 20:00"
+				},
+				/* Viernes: */
+				{
+					name: "Presentes: Evelin Virunurm, Alex Rozinov, Karen Yániz, Alonso Hogue, Andrea Gozalves, Mikel Sarrias.",
+					day: 12,
+					time: "18:00 - 20:00"
+				},
+				{
+					name: "Presentes: Evelin Virunurm, Alex Rozinov, Karen Yániz, Alonso Hogue, Andrea Gozalves, Mikel Sarrias.",
+					day: 19,
+					time: "18:00 - 20:00"
+				},
+				{
+					name: "Presentes: Evelin Virunurm, Alex Rozinov, Karen Yániz, Alonso Hogue, Andrea Gozalves, Mikel Sarrias.",
+					day: 26,
 					time: "18:00 - 20:00"
 				},
 			],
