@@ -1,3 +1,9 @@
+
+# The Dark Side Art Project
+Proyecto realizado para la exposión del grupo de artistas The Dark Side Art, del que formo parte.
+
+[Live Preview](https://thedarksideart.netlify.app/)
+
 ## Todo list:
 
 - ~~Art Carousel~~
